@@ -28,11 +28,19 @@ public class facebookFooter {
 		int size = listTabs.size();
 
 		System.out.println(size);
-
+		
 		for(int i = 1;i<size-2;i++) {
 			Thread.sleep(3000);
 			System.out.println("current element:" + i);
-			WebElement element = driver.findElement(By.xpath("//*[@id='pageFooterChildren']/ul/li["+i+"]"));
+			
+			//Creating listDuplicate to get rid of Stale Element Exception
+			List<WebElement> listTabsDuplicate = driver.findElements(By.xpath("//*[@id='pageFooterChildren']/ul/li"));
+			
+			WebElement element = listTabsDuplicate.get(i);
+			/** Another way of passing fresh elements to get rid of Stale Element Exception
+			WebElement element = driver.findElement(By.xpath("//*[@id='pageFooterChildren']/ul/li["+i+"]")); 
+			element.click(); **/
+			
 			element.click();
 			String linkTitle = driver.getTitle();
 			System.out.println(linkTitle);
