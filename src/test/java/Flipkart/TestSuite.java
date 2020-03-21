@@ -26,9 +26,7 @@ public class TestSuite extends BrowserClass {
 		
 		//Ram Selection
 		explicitWait(driver,page.getRamObject().Ram4GB, 10);
-		
-		explicitWait(driver, page.getBrandObject().Realme, 10);
-		
+				
 		//Brand Selection
 //		Thread.sleep(2000);
 		page.getBrandObject().Realme.click();
