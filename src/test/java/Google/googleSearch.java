@@ -7,7 +7,7 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-import Flipkart.BrowserClass;
+import com.flipkart.testcases.BrowserClass;
 
 public class googleSearch extends BrowserClass{
 	

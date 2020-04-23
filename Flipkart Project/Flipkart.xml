@@ -3,13 +3,22 @@
 <suite parallel="false" name="Suite">
   <test name="Test">
   		<parameter name="Product" value="Phones" />
-
+  		
+  		<parameter name="ram" value="4 GB" />
+  		
+  		<parameter name="brandName" value="Honor" />
+  		
+  		<parameter name="mobileName" value="Honor 20i (Phantom Blue, 128 GB)" />
+  		
+  		<parameter name="tabNum" value="1" />
+  		
+  		
 		<parameter name="url" value="https://www.flipkart.com" />
 
 		<parameter name="browserType" value="chrome" />
 		
     <classes>
-      <class name="Flipkart.TestSuite"/>
+      <class name="com.flipkart.testcases.TestSuite"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

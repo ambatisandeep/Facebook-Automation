@@ -20,6 +20,7 @@ public class facebookFooter {
 		driver.get("https://www.facebook.com");
 		String actualTitle = driver.getTitle();
 		System.out.println(actualTitle);
+		
 
 		//List of facebook footer tabs Links
 		List<WebElement> listTabs = driver.findElements(By.xpath("//*[@id='pageFooterChildren']/ul/li"));
