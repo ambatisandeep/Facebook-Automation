@@ -1,20 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
-  <parameter name="brandName" value="Realme"/>
-  <parameter name="Product" value="Phones"/>
-  <parameter name="url" value="https://www.flipkart.com"/>
-  <parameter name="ram" value="6 GB"/>
-  <parameter name="browserType" value="chrome"/>
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="Flipkart.TestSuite">
+      <class name="com.flipkart.testcases.TestSuite">
         <methods>
           <include name="beforeMethod"/>
+          <include name="TestCase"/>
           <include name="afterMethod"/>
-          <include name="TestCase" invocation-numbers="0"/>
         </methods>
-      </class> <!-- Flipkart.TestSuite -->
+      </class> <!-- com.flipkart.testcases.TestSuite -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
